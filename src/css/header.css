@@ -1,0 +1,61 @@
+nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+nav.menu-active {
+    background: linear-gradient(135deg, var(--bordo), var(--marrom-escuro));
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--mostarda);
+}
+
+.menu-toggle {
+    display: block;
+    background: linear-gradient(135deg, var(--bordo), var(--marrom-escuro));
+    border: none;
+    color: var(--bege-claro);
+    font-size: 1.5rem;
+    cursor: pointer;
+    right: 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--bordo);
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.nav-links a {
+    color: var(--bege-claro);
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    transition: background 0.3s;
+    border-left: 3px solid transparent;
+}
+
+.nav-links a:hover {
+    background: var(--marrom-escuro);
+    border-left-color: var(--mostarda);
+}

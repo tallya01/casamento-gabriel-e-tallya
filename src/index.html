@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel & Tallya</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/countdown.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Fleur+De+Leah&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" onclick="closeMenu()">Home</a>
+                <a href="#cerimonia" onclick="closeMenu()">A Cerimônia</a>
+                <a href="#manual" onclick="closeMenu()">Manual do Convidado</a>
+                <a href="#historia" onclick="closeMenu()">Nossa História</a>
+                <a href="#faq" onclick="closeMenu()">FAQ</a>
+            </div>
+        </nav>
+        <!-- HOME -->
+        <section id="home">
+            <div class="hero-content">
+                <div class="names">
+                    Gabriel <span class="separator">&</span> Tallya
+                </div>
+                <div class="date">18 de julho de 2026</div>
+            </div>
+
+            <div class="countdown-container">
+                <div class="countdown-title">Contagem Regressiva</div>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="days">00</div>
+                        <div class="countdown-label">Dias</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="hours">00</div>
+                        <div class="countdown-label">Horas</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="minutes">00</div>
+                        <div class="countdown-label">Min</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="seconds">00</div>
+                        <div class="countdown-label">Seg</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- A CERIMÔNIA -->
+        <section id="cerimonia">
+            <h2>A Cerimônia</h2>
+            <div class="content-placeholder">
+                <h3 style="color: var(--bordo); margin-bottom: 1rem;">Local da Cerimônia</h3>
+                <div class="image-placeholder">[Inserir imagem do local da cerimônia]</div>
+                <div class="text-placeholder">
+                    <p>[Inserir descrição do local da cerimônia]</p>
+                    <p>[Inserir endereço completo]</p>
+                    <p>[Inserir horário da cerimônia]</p>
+                </div>
+            </div>
+
+            <div class="content-placeholder">
+                <h3 style="color: var(--bordo); margin-bottom: 1rem;">Recepção</h3>
+                <div class="image-placeholder">[Inserir imagem do local da recepção]</div>
+                <div class="text-placeholder">
+                    <p>[Inserir descrição do local da recepção]</p>
+                    <p>[Inserir endereço completo se diferente]</p>
+                    <p>[Inserir horário da recepção]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MANUAL DO CONVIDADO -->
+        <section id="manual">
+            <h2>Manual do Convidado</h2>
+            <div class="content-placeholder">
+                <h3 style="color: var(--bordo); margin-bottom: 1rem;">Dress Code</h3>
+                <div class="text-placeholder">
+                    <p>[Inserir informações sobre o dress code]</p>
+                </div>
+            </div>
+
+            <div class="content-placeholder">
+                <h3 style="color: var(--bordo); margin-bottom: 1rem;">Como Chegar</h3>
+                <div class="text-placeholder">
+                    <p>[Inserir instruções de como chegar ao local]</p>
+                    <p>[Inserir informações sobre estacionamento]</p>
+                </div>
+            </div>
+
+            <div class="content-placeholder">
+                <h3 style="color: var(--bordo); margin-bottom: 1rem;">Hospedagem</h3>
+                <div class="text-placeholder">
+                    <p>[Inserir sugestões de hotéis próximos]</p>
+                </div>
+            </div>
+
+            <div class="content-placeholder">
+                <h3 style="color: var(--bordo); margin-bottom: 1rem;">Lista de Presentes</h3>
+                <div class="text-placeholder">
+                    <p>[Inserir informações sobre lista de presentes]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOSSA HISTÓRIA -->
+        <section id="historia">
+            <h2>Nossa História</h2>
+            <div class="content-placeholder">
+                <h3 style="color: var(--bordo); margin-bottom: 1rem;">Como Nos Conhecemos</h3>
+                <div class="image-placeholder">[Inserir foto do casal - primeiro encontro]</div>
+                <div class="text-placeholder">
+                    <p>[Inserir história de como se conheceram]</p>
+                </div>
+            </div>
+
+            <div class="content-placeholder">
+                <h3 style="color: var(--bordo); margin-bottom: 1rem;">O Pedido</h3>
+                <div class="image-placeholder">[Inserir foto do pedido de casamento]</div>
+                <div class="text-placeholder">
+                    <p>[Inserir história do pedido de casamento]</p>
+                </div>
+            </div>
+
+            <div class="content-placeholder">
+                <h3 style="color: var(--bordo); margin-bottom: 1rem;">Nossa Jornada</h3>
+                <div class="image-placeholder">[Inserir foto do casal]</div>
+                <div class="text-placeholder">
+                    <p>[Inserir momentos especiais da relação]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq">
+            <h2>Perguntas Frequentes</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Posso levar acompanhante?</div>
+                <div class="faq-answer">[Inserir resposta]</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Posso levar crianças?</div>
+                <div class="faq-answer">[Inserir resposta]</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Preciso confirmar presença?</div>
+                <div class="faq-answer">[Inserir resposta e prazo para confirmação]</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Haverá transporte?</div>
+                <div class="faq-answer">[Inserir resposta]</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Qual o horário de início e término?</div>
+                <div class="faq-answer">[Inserir resposta]</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Posso tirar fotos durante a cerimônia?</div>
+                <div class="faq-answer">[Inserir resposta]</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Com amor, [Nome Noivo] & [Nome Noiva]</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">&copy; 2026 - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/countdown.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@media (min-width: 768px) {
+    /* .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        background: none;
+        padding: 0;
+    } */
+
+    .nav-links a {
+        padding: 0.5rem 1.5rem;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+    }
+
+    .nav-links a:hover {
+        background: none;
+        border-bottom-color: var(--mostarda);
+        border-left: none;
+    }
+
+    .names {
+        font-size: 3.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .countdown-value {
+        font-size: 3rem;
+        width: 90px;
+        height: 90px;
+    }
+
+    .countdown-label {
+        font-size: 1rem;
+    }
+
+    .content-placeholder {
+        padding: 3rem;
+    }
+
+    section {
+        padding: 4rem 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .countdown {
+        gap: 2rem;
+    }
+
+    .countdown-value {
+        width: 110px;
+        height: 110px;
+        font-size: 3.5rem;
+    }
+}
