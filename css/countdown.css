@@ -1,5 +1,5 @@
 .countdown-container {
-    background: rgba(61, 29, 22, 0.8);
+    background: rgba(199, 90, 60, 0.8);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -7,7 +7,7 @@
 }
 
 .countdown-title {
-    color: white;
+    color: var(--bege-claro);
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
 }
