@@ -27,7 +27,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.5rem 1.5rem;
     margin: 0 auto;
 }
 
@@ -85,4 +85,18 @@ footer {
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 3rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+#loc-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
 }
