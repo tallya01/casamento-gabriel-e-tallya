@@ -53,6 +53,10 @@
     section {
         padding: 4rem 2rem 2rem;
     }
+
+    .image-placeholder {
+        height: 350px;
+    }
 }
 
 @media (min-width: 1024px) {
