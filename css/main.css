@@ -50,6 +50,10 @@ h2 {
     width: 100%;
 }
 
+ul {
+    list-style-position: inside;
+}
+
 .content-placeholder {
     background: white;
     padding: 2rem;
@@ -96,6 +100,10 @@ footer {
 
 .align-center {
     align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
 }
 
 #loc-icon {
