@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Presença | Gabriel & Tallya</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/countdown.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Fleur+De+Leah&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="rsvp">
+            <h2>Confirmação de Presença</h2>
+            <div class="content-placeholder">
+                <h3 style="color: var(--bordo); margin-bottom: 1rem;">Informe seu código</h3>
+                <div class="text-placeholder">
+                    <p>Digite o código de 4 caracteres que você recebeu.</p>
+                </div>
+                <form id="rsvp-form">
+                    <div class="form-row">
+                        <label for="guest-code">Código de confirmação</label>
+                        <input id="guest-code" name="code" type="text" maxlength="4" placeholder="AB12" autocomplete="off" required>
+                    </div>
+                    <button type="submit" class="button-primary">Consultar código</button>
+                </form>
+                <div id="rsvp-result" class="rsvp-result"></div>
+                <div style="margin-top: 1.5rem;">
+                    <a class="button-secondary" href="index.html">Voltar ao site</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Com amor, Gabriel & Tallya</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">&copy; 2026 - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/rsvp.js"></script>
+</body>
+</html>

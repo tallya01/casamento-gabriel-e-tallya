@@ -112,6 +112,131 @@ footer {
     margin-right: 0.5rem;
 }
 
+.button-primary,
+.button-secondary {
+    display: inline-block;
+    padding: 0.95rem 1.4rem;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.button-primary {
+    background-color: var(--bordo);
+    color: #fff;
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+    transform: translateY(-1px);
+}
+
+.button-secondary {
+    background-color: var(--bege);
+    color: var(--bordo);
+}
+
+.form-row {
+    margin: 0 auto 1rem;
+    max-width: 420px;
+    text-align: left;
+}
+
+.form-row label {
+    display: block;
+    color: var(--bordo);
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+.form-row input {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.rsvp-result {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.rsvp-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.rsvp-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rsvp-form-wrapper .text-placeholder,
+.rsvp-form-wrapper .rsvp-buttons {
+    text-align: center;
+}
+
+.rsvp-form-wrapper .form-row {
+    width: 100%;
+    max-width: 520px;
+}
+
+.guest-card {
+    background: #f9f2ea;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+    text-align: left;
+}
+
+.guest-card .form-row {
+    margin-bottom: 1rem;
+}
+
+.remove-guest-button {
+    background-color: rgba(183, 46, 18, 0.1);
+    color: #b71c1c;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 9999;
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 16px;
+    max-width: 420px;
+    width: 100%;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal-content p {
+    color: var(--bordo);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none !important;
+}
+
 .mb10 {
     margin-bottom: 10px;
 }
