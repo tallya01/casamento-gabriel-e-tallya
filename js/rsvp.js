@@ -359,8 +359,13 @@ rsvpForm.addEventListener('submit', async event => {
         }
 
         const data = await response.json();
-        if (data && data.first_name) {
-            showAttendanceOptions(code, data.first_name, data.max_companions);
+        if (data) {
+            if(data.confirmed) {
+                setStatus('Sua presença já foi confirmada. Se deseja alterar sua confirmação, por favor entre em contato conosco.', 'info');
+                return;
+            } 
+            else if (data.first_name)
+                showAttendanceOptions(code, data.first_name, data.max_companions);
         } else {
             setStatus('Não foi possível identificar o convidado. Verifique o código e tente novamente.', 'error');
         }
