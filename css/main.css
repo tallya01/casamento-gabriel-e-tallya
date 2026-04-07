@@ -117,6 +117,20 @@ footer {
     margin-right: 0.5rem;
 }
 
+.map-embed {
+    margin-top: 1rem;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.map-embed iframe {
+    display: block;
+    min-height: 260px;
+    width: 100%;
+    border: 0;
+}
+
 .button-primary,
 .button-secondary {
     display: inline-block;
