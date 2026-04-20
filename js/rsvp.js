@@ -257,7 +257,7 @@ const submitConfirmation = async (attending) => {
     }
 
     const confirmMessage = attending
-        ? 'Você está prestes a enviar sua confirmação com convidados. Deseja confirmar o envio?'
+        ? 'Você está prestes a enviar sua confirmação. Deseja confirmar o envio?'
         : 'Você está prestes a enviar uma resposta negativa. Deseja confirmar o envio?';
 
     showConfirmModal(confirmMessage, async () => {
