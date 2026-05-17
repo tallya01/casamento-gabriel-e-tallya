@@ -363,7 +363,11 @@ rsvpForm.addEventListener('submit', async event => {
             if(data.confirmed) {
                 setStatus('Sua presença já foi confirmada. Se deseja alterar sua confirmação, por favor entre em contato conosco.', 'info');
                 return;
-            } 
+            }
+            if(data.expiration_date && new Date(data.expiration_date) < new Date()) {
+                setStatus('Este código expirou e não pode mais ser utilizado.', 'error');
+                return;
+            }
             if (data.first_name)
                 showAttendanceOptions(code, data.first_name, data.max_companions);
         } else {
